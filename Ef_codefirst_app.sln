@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ef_codefirst_app", "Ef_codefirst_app.csproj", "{3E780805-1D0B-4498-8996-44C3372363F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ef_services", "..\Ef_services\Ef_services.csproj", "{2A32FF1E-14B8-4E32-A4FF-DC88B4354770}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E780805-1D0B-4498-8996-44C3372363F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E780805-1D0B-4498-8996-44C3372363F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E780805-1D0B-4498-8996-44C3372363F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E780805-1D0B-4498-8996-44C3372363F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A32FF1E-14B8-4E32-A4FF-DC88B4354770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A32FF1E-14B8-4E32-A4FF-DC88B4354770}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A32FF1E-14B8-4E32-A4FF-DC88B4354770}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A32FF1E-14B8-4E32-A4FF-DC88B4354770}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7A6630D-F809-4D74-A6B6-31C1FEB1CEC8}
+	EndGlobalSection
+EndGlobal

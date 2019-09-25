@@ -1,0 +1,49 @@
+﻿@model List<Ef_codefirst_app.Models.JobList>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Job List</h2>
+<nav class="text-right">
+    <button type="button" class="btn btn-light">
+        @Html.ActionLink("Add job", "AddJob", "JobList")
+    </button>
+    @*<a class="navbar-brand" href="#">
+            @Html.ActionLink("Add job", "AddJob", "JobList")
+        </a>*@
+</nav>
+<div>
+    @if (Model != null)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Company Name</th>
+                    <th scope="col">Job Role</th>
+                    <th scope="col">Skill</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Timestamp</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var list in Model)
+                {
+                    <tr>
+                        <th scope="row">@list.ID</th>
+                        <td>@list.CompanyName</td>
+                        <td>@list.JobRole</td>
+                        <td>@list.Skill</td>
+                        <td>@list.Description</td>
+                        <td>@list.Timestamp</td>
+                        <td>@Html.ActionLink("Edit", "EditJob", "JobList", new { id = list.ID })</td>
+                        <td>@Html.ActionLink("Delete", "DeleteJob", "JobList", new { id = list.ID })</td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    }
+
+</div>

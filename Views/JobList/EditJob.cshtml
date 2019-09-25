@@ -1,0 +1,61 @@
+﻿@model Ef_codefirst_app.Models.JobList
+
+@{
+    ViewBag.Title = "EditJob";
+}
+
+<h2>Edit Job List</h2>
+
+@using (Html.BeginForm("SaveData", "JobList"))
+{
+    @*@Html.AntiForgeryToken();*@
+    @Html.ValidationSummary(true);
+<div>
+    @Html.HiddenFor(model => model.ID)
+</div>
+    <div class="editor-label">
+        @Html.LabelFor(model => model.JobRole)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.JobRole)
+        @Html.ValidationMessageFor(model => model.JobRole)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Description)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Description)
+        @Html.ValidationMessageFor(model => model.Description)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(model => model.CompanyName)
+    </div>
+    <div class="form-group">
+        <label> @Html.LabelFor(model => model)</label>
+        @Html.EditorFor(model => model.CompanyName, new { @class = "form-control" })
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Skill)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Skill)
+        @Html.ValidationMessageFor(model => model.Skill)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Timestamp)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Timestamp)
+        @Html.ValidationMessageFor(model => model.Timestamp)
+    </div>
+    <p>
+        <input type="submit" value="Edit details" />
+    </p>
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+
+}
+
+
+
